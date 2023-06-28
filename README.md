@@ -1,4 +1,8 @@
-# pkg-size.dev
+<p align="center">
+	<img src=".github/logo.svg" width="400px">
+	<br>
+	<br>
+</p>
 
 This repository serves as a place to file bug reports and feature requests for [pkg-size.dev].
 
