@@ -1,6 +1,8 @@
 <p align="center">
 	<br>
-	<img src=".github/logo.svg" width="400px">
+	<a href="https://pkg-size.dev">
+		<img src=".github/logo.svg" width="400px">
+	</a>
 	<br>
 	<br>
 </p>
