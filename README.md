@@ -45,7 +45,7 @@ When analyzing them, you may find some packages include unnecessary code and imp
 ### What was this project inspired by?
 Major thanks to [Package Phobia](https://packagephobia.com) & [Bundlephobia](https://bundlephobia.com).
 
-I used to use both services often, but I always wished to see the their results on a single page. I also wanted more insights. For example: What dependencies do the packages install? And what are the bottlenecks?
+I used to use both services often, but I always wished to see the their results on a single page. I also wanted more insights. For example: What dependencies do the packages install? Which dependency is the largest? And, why is it installed?
 
 I thought of making that tool serveral times but I was conflicted by the idea of server maintenance and costs, until I discovered [WebContainers](https://webcontainers.io).
 
