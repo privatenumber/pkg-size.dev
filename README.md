@@ -43,11 +43,12 @@ When analyzing them, you may find some packages include unnecessary code and imp
 > If you're interested in minimizing how much space `node_modules` consumes, check out [pnpm](https://pnpm.io). Not only do you regain a ton of disk space, it's also a huge DX improvement!
 
 ### What was this project inspired by?
-Major thanks to [Package Phobia](https://packagephobia.com) & [Bundlephobia](https://bundlephobia.com).
+This project draws its inspiration from two amazing resources: [Package Phobia](https://packagephobia.com) and [Bundlephobia](https://bundlephobia.com).
 
-I used to use both services often, but I always wished to see the their results on a single page. I also wanted more insights. For example: What dependencies do the packages install? Which dependency is the largest? And, why is it installed?
+Having frequently used both services, I often wished for more comprehensive insights and consolidated results on a single page. For instance, I wished to see the dependencies installed by packages, identify the largest dependency, and understand the reasons behind its installation. One major aspect that seemed to be missing was the inclusion of peer dependencies. Although they're essential for running the package, there was no option to consider them in the install size.
 
-I thought of making that tool serveral times but I was conflicted by the idea of server maintenance and costs, until I discovered [WebContainers](https://webcontainers.io).
+I had considered creating such a tool multiple times, but I hesitated due to concerns about server maintenance and associated costs. However, my perspective changed when I discovered [WebContainers](https://webcontainers.io).
+
 
 ### How does the website work?
 
