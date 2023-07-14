@@ -60,3 +60,12 @@ The website is static (doesn't require a backend) and hosted on Vercel.
 
 
 [pkg-size.dev]: https://pkg-size.dev
+
+
+## Sponsors
+
+<p align="center">
+	<a href="https://github.com/sponsors/privatenumber">
+		<img src="https://cdn.jsdelivr.net/gh/privatenumber/sponsors/sponsorkit/sponsors.svg">
+	</a>
+</p>
