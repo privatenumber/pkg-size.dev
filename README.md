@@ -63,9 +63,33 @@ At its core, the tool is built on [WebContainers](https://webcontainers.io)—a 
 
 The website is static (doesn't require a backend) and hosted on Vercel.
 
+### Is it possible to show the import cost (tree shaking gains) of each named export?
 
-[pkg-size.dev]: https://pkg-size.dev
+In most cases, no.
 
+In simple cases where each export is independent, you can easily see the cost of importing each one. For example:
+```ts
+export const A = () => <10kb string>;
+export const B = () => <20kb string>;
+export const C = () => <30kb string>;
+```
+
+However, in real-life examples, it's not always straightforward.
+For instance, in this slightly complex example:
+```ts
+const data = [
+	<10kb string>,
+	<20kb string>,
+];
+
+export const A = () => data[0];
+export const B = () => data[1];
+export const C = () => <30kb string>;
+```
+
+Both `A` and `B` depend on `data`, so either importing `A` or `B` alone will pull in the 30kb `data`. To tree shake it, you need to remove both `A` and `B`. That's to say, neither `A` or `B` have individual import costs.
+
+Determining whether an export has a clear import cost becomes more complex as the number of exports and code size increases.
 
 ## Sponsors
 
@@ -74,3 +98,5 @@ The website is static (doesn't require a backend) and hosted on Vercel.
 		<img src="https://cdn.jsdelivr.net/gh/privatenumber/sponsors/sponsorkit/sponsors.svg">
 	</a>
 </p>
+
+[pkg-size.dev]: https://pkg-size.dev
