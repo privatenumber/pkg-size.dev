@@ -18,7 +18,7 @@ Currently, the project is in early stages of development and closed-source. But 
 
 The goal of [pkg-size.dev] is to make it easier for curious developers like you to explore the npm ecosystem. It allows you to browse projects in your dependency tree, discover new packages, and learn about their creators. Ultimately, it aims to foster a greater appreciation for the npm ecosystem.
 
-#### For package users, pkg-size.dev helps you:
+#### For package users, _pkg-size_ helps you:
 
 - Uncover hidden dependencies and understand why they're installed.
 - Maintain control over your `node_modules` by being mindful of what you're installing and its impact on size.
@@ -26,7 +26,7 @@ The goal of [pkg-size.dev] is to make it easier for curious developers like you 
 - Compare and evaluate similar packages to identify the best fit for your specific needs.
 - Discover the authors, developlment, and funding behind packages.
 
-#### For package authors, pkg-size.dev helps you:
+#### For package authors, _pkg-size_ helps you:
 - Evaluate installation bottlenecks to improve speed. Particularly important for CLI tools loaded with npx.
 - Ensure seamless downloads even in unideal conditions such as slow internet or low storage.
 - Minimize dependencies to reduce risks like breaking changes or malicious code.
@@ -40,19 +40,24 @@ Because they take up a lot of space on your disk. Even small packages can add up
 
 When analyzing them, you may find some packages include unnecessary code and impact your app's performance.
 
-> If you're interested in minimizing how much space `node_modules` consumes, check out [pnpm](https://pnpm.io). Not only do you regain a ton of disk space, it's also a huge DX improvement!
+> **Protip:** If you're interested in minimizing how much space `node_modules` consumes, check out [pnpm](https://pnpm.io). Not only do you regain a ton of disk space, it's also a huge DX improvement!
 
 ### What was this project inspired by?
-This project draws its inspiration from two amazing resources: [Package Phobia](https://packagephobia.com) and [Bundlephobia](https://bundlephobia.com).
+This project draws inspiration from two amazing services: [Package Phobia](https://packagephobia.com) and [Bundlephobia](https://bundlephobia.com).
 
-Having frequently used both services, I often wished for more comprehensive insights and consolidated results on a single page. For instance, I wished to see the dependencies installed by packages, identify the largest dependency, and understand the reasons behind its installation. One major aspect that seemed to be missing was the inclusion of peer dependencies. Although they're essential for running the package, there was no option to consider them in the install size.
+_pkg-size_ aims to improve upon these services in the following ways:
 
-I had considered creating such a tool multiple times, but I hesitated due to concerns about server maintenance and associated costs. However, my perspective changed when I discovered [WebContainers](https://webcontainers.io).
+1. **Consolidation**: _pkg-size_ combines insights from both services on one platform for a more cohesive analysis.
 
+2. **Dependency insights**: _pkg-size_ shows what was installed and why, providing valuable information for understanding the result, and helps with identifying large or duplicate dependencies. It also helps devs discover new packages.
+
+3. **Latest data**: _pkg-size_ does a fresh `npm install` each time, fetching the latest data and even reflecting updates in nested dependencies. In contrast, _Package Phobia_ and _Bundlephobia_ cache their results. For example, when calculating the installation size of `express`, if a nested dependency had a minor release that increased its size by 100MB, neither service would reflect the change in size because there's no version bump in `express`.
+
+4. **Peer Dependencies**: _pkg-size_ allows for the inclusion of peer dependencies in the size calculation, recognizing that they're essential for running packages.
 
 ### How does the website work?
 
-This website operates entirely in your browser, from installing npm packages to bundling them.
+This website operates entirely in your browser, from installing npm packages to bundling them!
 
 At its core, the tool is built on [WebContainers](https://webcontainers.io)—a technology by [StackBlitz](https://stackblitz.com) that allows Node.js to run in-browser—, to run npm and install packages directly in your browser. It then analyzes the `node_modules` directory to gain insights into the installed packages and their stats. [esbuild WASM](https://esbuild.github.io/getting-started/#wasm) is used to bundle the package.
 
