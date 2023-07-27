@@ -9,7 +9,7 @@
 
 This repository serves as a place to file bug reports and feature requests for [pkg-size.dev].
 
-If you found the website useful, your donation/sponsorship would be greatly appreciated! Issues from sponsors will be prioritized for support.
+If you found the website useful, your [donation/sponsorship](https://github.com/sponsors/privatenumber) would be greatly appreciated! Issues from sponsors will be prioritized for support.
 
 
 Currently, the project is in early stages of development and closed-source. But it may be open-sourced here in the future.
