@@ -9,10 +9,19 @@
 
 This repository serves as a place to file bug reports and feature requests for [pkg-size.dev].
 
-If you found the website useful, your [donation/sponsorship](https://github.com/sponsors/privatenumber) would be greatly appreciated! Issues from sponsors will be prioritized for support.
-
-
 Currently, the project is in early stages of development and closed-source. But it may be open-sourced here in the future.
+
+<br>
+
+<p align="center">
+	<a href="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=platinum">
+		<picture>
+			<source width="830" media="(prefers-color-scheme: dark)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=platinum&image=dark">
+			<source width="830" media="(prefers-color-scheme: light)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=platinum&image">
+			<img width="830" src="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=platinum&image" alt="Premium sponsor banner">
+		</picture>
+	</a>
+</p>
 
 ## About
 
@@ -31,6 +40,17 @@ The goal of [pkg-size.dev] is to make it easier for curious developers like you 
 - Ensure seamless downloads even in unideal conditions such as slow internet or low storage.
 - Minimize dependencies to reduce risks like breaking changes or malicious code.
 
+<br>
+
+<p align="center">
+	<a href="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=gold">
+		<picture>
+			<source width="830" media="(prefers-color-scheme: dark)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=gold&image=dark">
+			<source width="830" media="(prefers-color-scheme: light)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=gold&image">
+			<img width="830" src="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=gold&image" alt="Premium sponsor banner">
+		</picture>
+	</a>
+</p>
 
 ## FAQ
 
@@ -92,6 +112,23 @@ Both `A` and `B` depend on `data`, so either importing `A` or `B` alone will pul
 Determining whether an export has a clear import cost becomes more complex as the number of exports and code size increases.
 
 ## Sponsors
+
+<p align="center">
+	<a href="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver1">
+		<picture>
+			<source width="410" media="(prefers-color-scheme: dark)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver1&image=dark">
+			<source width="410" media="(prefers-color-scheme: light)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver1&image">
+			<img width="410" src="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver1&image" alt="Premium sponsor banner">
+		</picture>
+	</a>
+	<a href="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver2">
+		<picture>
+			<source width="410" media="(prefers-color-scheme: dark)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver2&image=dark">
+			<source width="410" media="(prefers-color-scheme: light)" srcset="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver2&image">
+			<img width="410" src="https://privatenumber-sponsors.vercel.app/api/sponsor?tier=silver2&image" alt="Premium sponsor banner">
+		</picture>
+	</a>
+</p>
 
 <p align="center">
 	<a href="https://github.com/sponsors/privatenumber">
